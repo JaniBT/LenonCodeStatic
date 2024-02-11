@@ -1,0 +1,40 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 4rem;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #2f3136;
+}
+
+.icons i{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 48px;
+    margin: 8px auto;
+    transition: all ease-in-out 0.2s;
+    color: white;
+}
+
+.icons i:hover{
+    transition: all ease-in-out 0.2s;
+    border-radius: 6rem;
+    color: #009900;
+}
+
+.tooltip{
+    font-family: Inter, sans-serif;
+    margin: 8px;
+    padding: 8px;
+    width: auto;
+    min-width: max-content;
+    background-color: #2f3136;
+    border-radius: 12px;
+    color: #fff;
+    display: none;
+    transform-origin: left;
+}
