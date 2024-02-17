@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400&display=swap');
+
+:root{
+    /* Betűstílusok */
+    --ff: 'Poppins', sans-serif;
+    --ff-light: 200;
+    --ff-normal: 400;
+    --ff-bold: 600;
+
+    /* Betűméretek */
+    --fs-400: 0.9275rem;
+    --fs-500: 1.25rem;
+    --fs-600: 1.625rem;
+    --fs-900: 2.5rem;
+
+    /* Színek */
+    --clr-neutral-900: hsl(234, 12%, 34%);
+    --clr-neutral-400: hsl(229, 6%, 66%);
+    --clr-neutral-100: hsl(0, 0%, 98%);
+
+    --clr-teal: hsl(180, 58%, 56%);
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+html {
+    font-family: var(--ff);
+    font-weight: var(--ff-normal);
+    color: var(--clr-neutral-900);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--clr-neutral-100);
+    line-height: 1.1;
+}
+
+/* Navigációs Sáv */
+
+.wrapper{
+    border-bottom: 1px solid var(--clr-neutral-900);
+    padding-inline: 0;
+    padding-block: 1.3rem;
+    max-width: 550px;
+    margin-inline: auto;
+    margin-block: 0;
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper a{
+    font-size: var(--fs-400);
+    color: var(--clr-neutral-900);
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+
+.wrapper a:hover{
+    color: var(--clr-teal);
+    transition: 0.2s ease-in-out;
+}
+
+/* Main Rész */
+
+main{
+    margin-inline: auto;
+    max-width: 1000px;
+}
+
+.home-image-div{
+    height: 30rem;
+    background: url("../assets/images/home-bg.jpg") center/cover no-repeat;
+}
