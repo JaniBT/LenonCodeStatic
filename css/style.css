@@ -131,7 +131,7 @@ main{
 }
 
 .img-container{
-    background: url('.././assets/images/image-cont.jpg') center/cover no-repeat;
+    background: url('../assets/images/image-cont.jpg') center/cover no-repeat;
     height: 20rem;
     display: flex;
     justify-content: space-between;
