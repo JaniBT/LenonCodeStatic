@@ -426,6 +426,7 @@ footer{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-left: 0;
     }
     .footer2, .footer2 h4, .footer2 p, .footer2 hr{
         margin-left: 0;
