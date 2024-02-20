@@ -290,7 +290,7 @@ main{
     margin-inline: auto;
     padding: 1rem;
     max-width: 335px;
-    max-height: 230px;
+    min-height: 230px;
     background: var(--clr-neutral-400);
     color: black;
 }
