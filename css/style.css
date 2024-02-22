@@ -635,3 +635,7 @@ footer{
         min-width: 0;
     }
 }
+
+.codebase-maintitle h1{
+    text-align: center;
+}
