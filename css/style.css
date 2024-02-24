@@ -636,6 +636,57 @@ footer{
     }
 }
 
+/* CodeBase page */
+
+.codebase-maintitle {
+    max-width: var(--mx-width);
+    margin-inline: auto;
+}
+
 .codebase-maintitle h1{
     text-align: center;
+}
+
+.main-menus{
+    margin-block: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+}
+
+.menu-href a{
+    display: block;
+    margin-inline: auto;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--clr-neutral-900);
+    font-weight: var(--ff-bold);
+    border: 1.5px solid var(--clr-neutral-900);
+    border-radius: 0.75rem;
+    transition: background 0.25s ease-in;
+}
+
+.menu-href a:hover{
+    background-color: var(--clr-neutral-900);
+    color: var(--clr-neutral-100);
+    transition: background 0.25s ease-out;
+}
+
+.menu-href a:active{
+    background: var(--clr-neutral-400);
+    transition: background 0.25s ease-in-out;
+}
+
+.small-main-menus{
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    .main-menus{
+        display: none;
+    }
+    
 }
