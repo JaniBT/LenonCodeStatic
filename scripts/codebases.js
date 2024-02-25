@@ -48,8 +48,7 @@ let nIntervId
 
 let login_user_list = []
 
-loginbutton.addEventListener('click', e => {
-    e.preventDefault()
+function login_attempt() {
     if (!user.value || !passw.value) {
         alert('Please fill out the user and the password form!')
     } else {
@@ -79,4 +78,9 @@ loginbutton.addEventListener('click', e => {
             alert(`You can try again after ${time_left} seconds!`)
         }
     }
+}
+
+loginbutton.addEventListener('click', e => {
+    e.preventDefault()
+    login_attempt()
 })

@@ -961,12 +961,10 @@ footer{
     }
     .side-nav-button2{
         display: block;
+        margin-left: 1rem;
     }
 }
 
-.home-page-codebases{
-    margin-left: 5rem;
-}
 
 .home-page-title{
     font-size: var(--fs-900);
@@ -1012,4 +1010,16 @@ footer{
 .signout-modal button:hover{
     cursor: pointer;
     opacity: 0.8;
+}
+
+@media screen and (max-width: 850px) {
+    .form-popup{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .form-popup{
+        width: 350px;
+    }
 }
