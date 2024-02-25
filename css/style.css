@@ -926,7 +926,15 @@ footer{
     transition: all 0.3s ease-in-out;
 }
 
-.side-nav-button #closeNav-btn{
+.side-nav-button2{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-15%, -50%);
+}
+
+.side-nav-button2 #closeNav-btn{
     display: none;
     background-color: var(--clr-grayblackish);
     border: 0;
@@ -938,7 +946,7 @@ footer{
     transition: all 0.3s ease-in-out;
 }
 
-.side-nav-button #closeNav-btn:hover{
+.side-nav-button2 #closeNav-btn:hover{
     background-color: var(--clr-purple);
     cursor: pointer;
     transition: all 0.3s ease-in-out;
@@ -951,4 +959,57 @@ footer{
     .side-nav-button{
         display: block;
     }
+    .side-nav-button2{
+        display: block;
+    }
+}
+
+.home-page-codebases{
+    margin-left: 5rem;
+}
+
+.home-page-title{
+    font-size: var(--fs-900);
+    text-align: center;
+}
+
+.signout-modal{
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 0.1rem solid black;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.signout-modal h3{
+    font-size: var(--fs-550);
+}
+
+.signout-modal div{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.signout-modal button{
+    font-family: var(--ff);
+    border: none;
+    background-color: var(--clr-teal);
+    padding: 0.75rem;
+}
+
+.signout-modal button:last-child{
+    background-color: var(--clr-red);
+}
+
+.signout-modal button:hover{
+    cursor: pointer;
+    opacity: 0.8;
 }

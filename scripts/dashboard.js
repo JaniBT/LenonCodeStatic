@@ -6,7 +6,6 @@ navOpener.onclick = function(e) {
     sideNav.style.display = "flex"
     navOpener.style.display = "none"
     navCloser.style.display = "block"
-    navCloser.style.marginLeft = "4.5rem"
 }
 
 navCloser.onclick = function(e) {
@@ -21,3 +20,23 @@ window.addEventListener('resize', e => {
         sideNav.display = "flex"
     }
 });
+
+const signout_modal = document.querySelector('.signout-modal')
+const agree_btn = signout_modal.querySelector('#agree-btn')
+const disagree_btn = signout_modal.querySelector('#disagree-btn')
+const quit_btn = document.querySelector('#quit-btn')
+
+quit_btn.onclick = function(e) {
+    signout_modal.style.display = "flex"
+    document.body.style.opacity = "0.8"
+    signout_modal.style.opacity = "1"
+}
+
+disagree_btn.onclick = function(e) {
+    signout_modal.style.display = "none"
+    document.body.style.opacity = ""
+}
+
+agree_btn.onclick = function(e) {
+    window.open('../subpages/codebases.html', '_parent')
+}

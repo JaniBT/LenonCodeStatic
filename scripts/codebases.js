@@ -46,6 +46,8 @@ let number_of_tries = 0
 let time_left = 60
 let nIntervId
 
+let login_user_list = []
+
 loginbutton.addEventListener('click', e => {
     e.preventDefault()
     if (!user.value || !passw.value) {
@@ -56,6 +58,7 @@ loginbutton.addEventListener('click', e => {
             for (let i = 0; i < logins.login_auth.length; i++) {
                 if (logins.login_auth[i].username == user.value && logins.login_auth[i].password == passw.value) {
                     user_found = true
+                    login_user_list.push(logins.login_auth[i].username)
                     break
                 } else {
                     user_found = false
