@@ -74,14 +74,13 @@ body{
     margin-inline: auto;
     margin-block: 0;
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     list-style-type: none;
     justify-content: flex-start;
     align-items: center;
 }
 
 .wrapper a{
-    margin-left: var(--ml-1);
     font-size: var(--fs-400);
     color: var(--clr-neutral-900);
     text-decoration: none;
