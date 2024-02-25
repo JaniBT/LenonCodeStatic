@@ -17,6 +17,8 @@
     --fs-900: 2.5rem;
 
     /* Színek */
+    --clr-grayblackish: hsl(216, 13%, 15%);
+
     --clr-neutral-900: hsl(234, 12%, 34%);
     --clr-neutral-400: hsl(229, 6%, 66%);
     --clr-neutral-100: hsl(0, 0%, 98%);
@@ -845,4 +847,109 @@ footer{
 
 #myForm{
     display: none;
+}
+
+.side-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    flex: 1;
+    gap: 1.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100dvh;
+    padding: 0.25rem;
+    background-color: var(--clr-grayblackish);
+}
+
+.side-nav a {
+    text-decoration: none;
+}
+
+.side-nav a > * {
+    padding: 0.75rem;
+    font-size: 2rem;
+    color: var(--clr-neutral-100);
+}
+
+.side-nav a >*:hover{
+    cursor: pointer;
+    border-radius: 0.8rem;
+    background-color: var(--clr-purple);
+    transition: all 0.3s ease-in-out;
+}
+
+.side-nav #quit-btn{
+    padding: 0.75rem;
+    background-color: transparent;
+    color: var(--clr-neutral-100);
+    border: 0;
+    font-size: 2rem;
+}
+
+.side-nav #quit-btn:hover{
+    cursor: pointer;
+    border-radius: 0.8rem;
+    background-color: var(--clr-purple);
+    transition: all 0.3s ease-in-out;
+}
+
+.middle-nav{
+    display: flex;
+    gap: .5rem;
+    flex-direction: column;
+}
+
+.side-nav-button{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.side-nav-button #showNav-btn{
+    background-color: var(--clr-grayblackish);
+    border: 0;
+    font-size: 2rem;
+    color: var(--clr-neutral-100);
+    padding: 0.4rem;
+    margin-left: 0.5rem;
+    border-radius: 0.75rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.side-nav-button #showNav-btn:hover{
+    background-color: var(--clr-purple);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.side-nav-button #closeNav-btn{
+    display: none;
+    background-color: var(--clr-grayblackish);
+    border: 0;
+    font-size: 2rem;
+    color: var(--clr-neutral-100);
+    padding: 0.4rem;
+    margin-left: 0.5rem;
+    border-radius: 0.75rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.side-nav-button #closeNav-btn:hover{
+    background-color: var(--clr-purple);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 700px) {
+    .side-nav{
+        display: none;
+    }
+    .side-nav-button{
+        display: block;
+    }
 }

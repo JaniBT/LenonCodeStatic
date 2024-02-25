@@ -52,15 +52,20 @@ loginbutton.addEventListener('click', e => {
         alert('Please fill out the user and the password form!')
     } else {
         if (number_of_tries < 3) {
+            let user_found = false
             for (let i = 0; i < logins.login_auth.length; i++) {
                 if (logins.login_auth[i].username == user.value && logins.login_auth[i].password == passw.value) {
-                    window.open('../subpages/codebaseDashboard.html', '_parent')
+                    user_found = true
                     break
                 } else {
-                    number_of_tries += 1
-                    alert(`Username or Password is incorrect. Try again! You have ${4 - number_of_tries} tries left!`)
-                    break
+                    user_found = false
                 }
+            }
+            if (user_found) {
+                window.open('../subpages/codebaseDashboard.html', '_parent')
+            } else {
+                number_of_tries += 1
+                alert(`Username or Password is incorrect. Try again! You have ${4 - number_of_tries} tries left!`)
             }
         } else if (number_of_tries === 3) {
             alert('You exceeded your login attempts!')
