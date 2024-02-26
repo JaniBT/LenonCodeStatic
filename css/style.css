@@ -1023,9 +1023,36 @@ footer{
     }
 }
 
+.home-page-codebases{
+    margin-left: 4rem;
+}
+
+@media screen and (max-width: 700px) {
+    .home-page-codebases{
+        margin-left: 0;
+    }
+}
 
 .home-page-title{
     font-size: var(--fs-900);
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.home-page-div-title{
+    text-align: center;
+    margin-bottom: 8rem;
+}
+
+.home-page-div-title p{
+    padding: 0;
+}
+
+.codeOne{
+    text-align: left;
+}
+
+.codeOne h2{
     text-align: center;
 }
 
